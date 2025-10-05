@@ -23,8 +23,8 @@ def main():
 
     val_data = data[:n_val]
     train_data = data[n_val:]
-
-    # Ghi ra file JSONL
+ 
+    # Ghi ra file JSONL 
     with open(TRAIN_OUT, "w", encoding="utf-8") as f_train:
         for item in train_data:
             f_train.write(json.dumps(item, ensure_ascii=False) + "\n")

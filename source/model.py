@@ -46,4 +46,4 @@ class MultiInputCafeBERT(nn.Module):
         h = torch.cat([cls_ctx, cls_pr, cls_resp], dim=1)  # [B, 3*hidden]
         h = self.dropout(h)
         logits = self.classifier(h)
-        return logits
+        return logits 

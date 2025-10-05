@@ -16,7 +16,7 @@ def preprocess(example, max_len_context=128, max_len_prompt=64, max_len_response
 
     Returns:
         dict: chứa input_ids và attention_mask cho từng feature + label
-    """
+    """ 
 
     # Encode riêng từng feature
     context_enc = tokenizer(
