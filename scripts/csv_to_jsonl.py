@@ -18,7 +18,7 @@ def convert_csv_to_jsonl(csv_file, jsonl_file):
     print(f"Đã chuyển {csv_file} → {jsonl_file}")
 
 def main():
-    files = ["vihallu-train.csv", "vihallu-public-test.csv"]
+    files = ["vihallu-train.csv", "vihallu-public-test.csv", "vihallu-private-test.csv"]
     for file in files:
         csv_path = os.path.join(CSV_DIR, file)
         jsonl_path = os.path.join(JSONL_DIR, file.replace(".csv", ".jsonl"))
